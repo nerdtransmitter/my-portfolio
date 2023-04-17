@@ -1,12 +1,30 @@
 <div class="container">
   <h1>My Projects</h1>
   <% @projects.each do |project| %>
-    <div class="card my-4 p-3 rounded">
-      <div class="project-info d-flex justify-content-between">
-        <h3 class="fw-bolder"><%= project.title %></h3>
-        <h4><%= project.year %></h4>
+    <div class="my-4 p-3 project-card ">
+      <%# <div class="project-left"> %>
+        <div class="project-pic"></div>
+        <div class="project-info d-flex justify-content-between">
+          <h3 class="fw-bolder"><%= project.title %></h3>
+          <h4><%= project.year %></h4>
+        </div>
+        <h6><%= project.role %></h6>
+        <p class="px-3"><%= project.description %></p>
+        <ul>
+          <% project.skills.each do |skill| %>
+          <li class="text-xs inline-flex items-center font-bold leading-sm uppercase px-3 py-1 bg-blue-200 text-blue-700 rounded-full">
+            <%= skill %>
+          </li>
+          <% end %>
+        </ul>
+      <%# </div> %>
+      <div class="carousel rounded-box w-96">
+        <% project.photos.each do |photo| %>
+          <div class="carousel-item w-1/2">
+            <%= cl_image_tag photo.key, class: "w-full" %>
+          </div>
+        <% end %>
       </div>
-      <p><%= project.description %></p>
     </div>
   <% end %>
 </div>

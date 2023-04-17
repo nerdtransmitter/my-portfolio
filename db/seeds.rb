@@ -22,7 +22,19 @@ p1 = Project.create(
   skills: ['Ruby on Rails', 'JavaScript', 'HTML', 'CSS', 'Figma', 'PostgreSQL', 'ActiveStorage', 'Mapbox', 'Cloudinary', 'UX/UI', 'Heroku'],
   category: 'website'
 )
-p1.save
+
+p1.photos.attach(io: File.open(File.join(Rails.root, "/app/assets/images/QLVCP.png")), filename: "marcher_prendre_lair.png", content_type: "image/png")
+p1.photos.attach(io: File.open(File.join(Rails.root, "/app/assets/images/QLVCP1.png")), filename: "marcher_prendre_lair.png", content_type: "image/png")
+p1.photos.attach(io: File.open(File.join(Rails.root, "/app/assets/images/QLVCp1.png")), filename: "marcher_prendre_lair.png", content_type: "image/png")
+p1.photos.attach(io: File.open(File.join(Rails.root, "/app/assets/images/QLVCP3.png")), filename: "marcher_prendre_lair.png", content_type: "image/png")
+p1.photos.attach(io: File.open(File.join(Rails.root, "/app/assets/images/QLVCP4.png")), filename: "marcher_prendre_lair.png", content_type: "image/png")
+p1.photos.attach(io: File.open(File.join(Rails.root, "/app/assets/images/QLVCP5.png")), filename: "marcher_prendre_lair.png", content_type: "image/png")
+p1.photos.attach(io: File.open(File.join(Rails.root, "/app/assets/images/QLVCP6.png")), filename: "marcher_prendre_lair.png", content_type: "image/png")
+p1.photos.attach(io: File.open(File.join(Rails.root, "/app/assets/images/QLVCP7.png")), filename: "marcher_prendre_lair.png", content_type: "image/png")
+p1.photos.attach(io: File.open(File.join(Rails.root, "/app/assets/images/QLVCP8.png")), filename: "marcher_prendre_lair.png", content_type: "image/png")
+p1.photos.attach(io: File.open(File.join(Rails.root, "/app/assets/images/QLVCP9.png")), filename: "marcher_prendre_lair.png", content_type: "image/png")
+p1.photos.attach(io: File.open(File.join(Rails.root, "/app/assets/images/QLVCP10.png")), filename: "marcher_prendre_lair.png", content_type: "image/png")
+p1.save!
 
 p2 = Project.create(
   title: "Rent The Magic",
@@ -35,5 +47,9 @@ p2 = Project.create(
   skills: ['Ruby on Rails', 'JavaScript', 'HTML', 'CSS', 'PostgreSQL', 'ActiveStorage', 'ActiveRecord', 'Mapbox', 'Cloudinary', 'UX/UI', 'Heroku'],
   category: 'website'
 )
+
+p2.photos.attach(io: File.open(File.join(Rails.root, "/app/assets/images/RTM1.png")), filename: "marcher_prendre_lair.png", content_type: "image/png")
+p2.photos.attach(io: File.open(File.join(Rails.root, "/app/assets/images/RTM2.png")), filename: "marcher_prendre_lair.png", content_type: "image/png")
+p2.save!
 
 puts 'Projects created!'
