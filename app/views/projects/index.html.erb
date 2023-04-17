@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>My Projects</h1>
+  <% @projects.each do |project| %>
+    <div class="card my-4 p-3 rounded">
+      <div class="project-info d-flex justify-content-between">
+        <h3 class="fw-bolder"><%= project.title %></h3>
+        <h4><%= project.year %></h4>
+      </div>
+      <p><%= project.description %></p>
+    </div>
+  <% end %>
+</div>

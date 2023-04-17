@@ -1,0 +1,12 @@
+<div class="container form-container">
+  <%= simple_form_for(project) do |f| %>
+    <%= f.input :title %>
+    <%= f.input :description %>
+    <%= f.input :year %>
+    <%= f.input :client %>
+    <%= f.input :url %>
+    <%= f.input :github %>
+    <%= f.input :url %>
+    <%= f.input :photos, as: :file, input_html: { multiple: true } %>
+  <% end %>
+</div>
