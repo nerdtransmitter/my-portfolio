@@ -25,7 +25,7 @@ p1 = Project.create(
 
 p1.photos.attach(io: File.open(File.join(Rails.root, "/app/assets/images/QLVCP.png")), filename: "marcher_prendre_lair.png", content_type: "image/png")
 p1.photos.attach(io: File.open(File.join(Rails.root, "/app/assets/images/QLVCP1.png")), filename: "marcher_prendre_lair.png", content_type: "image/png")
-p1.photos.attach(io: File.open(File.join(Rails.root, "/app/assets/images/QLVCp1.png")), filename: "marcher_prendre_lair.png", content_type: "image/png")
+p1.photos.attach(io: File.open(File.join(Rails.root, "/app/assets/images/QLVCP2.png")), filename: "marcher_prendre_lair.png", content_type: "image/png")
 p1.photos.attach(io: File.open(File.join(Rails.root, "/app/assets/images/QLVCP3.png")), filename: "marcher_prendre_lair.png", content_type: "image/png")
 p1.photos.attach(io: File.open(File.join(Rails.root, "/app/assets/images/QLVCP4.png")), filename: "marcher_prendre_lair.png", content_type: "image/png")
 p1.photos.attach(io: File.open(File.join(Rails.root, "/app/assets/images/QLVCP5.png")), filename: "marcher_prendre_lair.png", content_type: "image/png")

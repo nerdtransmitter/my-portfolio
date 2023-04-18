@@ -12,9 +12,16 @@
         </div>
         <h6><%= project.role %></h6>
         <p class="px-3"><%= project.description %></p>
+        <div class="carousel carousel-center rounded-box h-100 w-96">
+          <% project.photos.each do |photo| %>
+            <div class="carousel-item">
+              <%= cl_image_tag photo.key, alt: 'project image'%>
+            </div>
+          <% end %>
+        </div>
         <ul>
           <% project.skills.each do |skill| %>
-          <li class="text-xs inline-flex items-center font-bold leading-sm uppercase px-3 py-1 bg-blue-200 text-blue-700 rounded-full">
+          <li class="tw-text-xs tw-inline-flex tw-items-center tw-font-bold tw-leading-sm tw-uppercase tw-px-3 tw-py-1 tw-bg-blue-200 tw-text-blue-700 tw-rounded-full">
             <%= skill %>
           </li>
           <% end %>
