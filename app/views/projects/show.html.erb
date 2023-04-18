@@ -1,16 +1,25 @@
-<div class="container">
   <h1><%= @project.title %></h1>
-  <div class="tw-carousel tw-carousel-center tw-rounded-box carousel-dimensions">
-    <% @project.photos.each do |photo| %>
-      <div class="tw-carousel-item">
-        <%= cl_image_tag photo.key, class: 'carousel-img' %>
-      </div>
-    <% end %>
+  <div class="m-4">
+  <p class="p-3 text-center fw-bolder tw-m-10 my-5 border"><%= @project.description %></p>
+    <div class="tw-carousel tw-carousel-center tw-rounded-box carousel-dimensions">
+      <% @project.photos.each do |photo| %>
+        <div class="tw-carousel-item">
+          <%= cl_image_tag photo.key, class: 'carousel-img' %>
+        </div>
+      <% end %>
+    </div>
+    <ul class="my-4 text-center">
+      <% @project.skills.each do |skill| %>
+      <li class="tw-text-xs tw-inline-flex tw-items-center tw-font-bold tw-leading-sm tw-uppercase tw-px-3 tw-py-1 tw-bg-blue-200 tw-text-blue-700 tw-rounded-full">
+        <%= skill %>
+      </li>
+      <% end %>
+    </ul>
   </div>
-  <%# <div class="mockup-phone">
+    <%# <div class="mockup-phone">
+  </div>
     <div class="camera"></div>
     <div class="display">
       <div class="artboard artboard-demo phone-1"><%= image_tag "commencer.PNG" %>
   <%# </div>
   </div> %>
-</div>
