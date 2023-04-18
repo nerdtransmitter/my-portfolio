@@ -1,1 +1,50 @@
-<h1>Get in contact</h1>
+<h1>Get in touch!</h1>
+<h2 class="text-center mb-5">Want to work together or have any questions?</h2>
+<section class="contact mx-5" id="contact">
+  <div class="contact-form-container mx-auto  max-w-[550px">
+    <div class="contact-form">
+      <form action="https://formspree.io/f/xqkogrwr" method="POST">
+        <div class="w-100">
+          <label for="name" class="mb-3 block text-base font-medium text-[#07074D]">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="sender-name"
+            placeholder="Enter Your Name"
+            class="input input-bordered input-info w-full max-w-xs mb-3"
+            required
+          />
+        </div>
+        <div class="">
+          <label for="email" class="mb-3 block text-base font-medium text-[#07074D]">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="sender-email"
+            placeholder="Enter Your Email"
+            class="input input-bordered input-info w-full max-w-xs mb-3"
+            required
+          />
+        </div>
+        <div class="">
+          <label for="message" class="mb-3 block text-base font-medium text-[#07074D]">Message</label>
+          <textarea
+            id="message"
+            cols="60"
+            rows="10"
+            placeholder="Enter Your Message"
+            name="message"
+            class="textarea textarea-info textarea-lg w-full max-w-xs mb-3"
+            required
+          ></textarea>
+        </div>
+        <input
+          type="submit"
+          value="Submit"
+          id="submit-btn"
+          class="btn btn-info submit-btn"
+        />
+      </form>
+    </div>
+  </div>
+</section>
