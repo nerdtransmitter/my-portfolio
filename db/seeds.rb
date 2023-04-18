@@ -20,20 +20,21 @@ p1 = Project.create(
   github: "https://github.com/nerdtransmitter/vie-pourrie",
   role: "fullstack developer",
   skills: ['Ruby on Rails', 'JavaScript', 'HTML', 'CSS', 'Figma', 'PostgreSQL', 'ActiveStorage', 'Mapbox', 'Cloudinary', 'UX/UI', 'Heroku'],
-  category: 'website'
+  category: 'website',
+  format: 'mobile'
 )
 
 p1.photos.attach(io: File.open(File.join(Rails.root, "/app/assets/images/QLVCP.png")), filename: "marcher_prendre_lair.png", content_type: "image/png")
 p1.photos.attach(io: File.open(File.join(Rails.root, "/app/assets/images/QLVCP1.png")), filename: "marcher_prendre_lair.png", content_type: "image/png")
 p1.photos.attach(io: File.open(File.join(Rails.root, "/app/assets/images/QLVCP2.png")), filename: "marcher_prendre_lair.png", content_type: "image/png")
+p1.photos.attach(io: File.open(File.join(Rails.root, "/app/assets/images/QLVCP5.png")), filename: "marcher_prendre_lair.png", content_type: "image/png")
+p1.photos.attach(io: File.open(File.join(Rails.root, "/app/assets/images/QLVCP10.png")), filename: "marcher_prendre_lair.png", content_type: "image/png")
+p1.photos.attach(io: File.open(File.join(Rails.root, "/app/assets/images/QLVCP9.png")), filename: "marcher_prendre_lair.png", content_type: "image/png")
+p1.photos.attach(io: File.open(File.join(Rails.root, "/app/assets/images/QLVCP8.png")), filename: "marcher_prendre_lair.png", content_type: "image/png")
+p1.photos.attach(io: File.open(File.join(Rails.root, "/app/assets/images/QLVCP7.png")), filename: "marcher_prendre_lair.png", content_type: "image/png")
+p1.photos.attach(io: File.open(File.join(Rails.root, "/app/assets/images/QLVCP6.png")), filename: "marcher_prendre_lair.png", content_type: "image/png")
 p1.photos.attach(io: File.open(File.join(Rails.root, "/app/assets/images/QLVCP3.png")), filename: "marcher_prendre_lair.png", content_type: "image/png")
 p1.photos.attach(io: File.open(File.join(Rails.root, "/app/assets/images/QLVCP4.png")), filename: "marcher_prendre_lair.png", content_type: "image/png")
-p1.photos.attach(io: File.open(File.join(Rails.root, "/app/assets/images/QLVCP5.png")), filename: "marcher_prendre_lair.png", content_type: "image/png")
-p1.photos.attach(io: File.open(File.join(Rails.root, "/app/assets/images/QLVCP6.png")), filename: "marcher_prendre_lair.png", content_type: "image/png")
-p1.photos.attach(io: File.open(File.join(Rails.root, "/app/assets/images/QLVCP7.png")), filename: "marcher_prendre_lair.png", content_type: "image/png")
-p1.photos.attach(io: File.open(File.join(Rails.root, "/app/assets/images/QLVCP8.png")), filename: "marcher_prendre_lair.png", content_type: "image/png")
-p1.photos.attach(io: File.open(File.join(Rails.root, "/app/assets/images/QLVCP9.png")), filename: "marcher_prendre_lair.png", content_type: "image/png")
-p1.photos.attach(io: File.open(File.join(Rails.root, "/app/assets/images/QLVCP10.png")), filename: "marcher_prendre_lair.png", content_type: "image/png")
 p1.save!
 
 p2 = Project.create(
@@ -45,7 +46,8 @@ p2 = Project.create(
   github: "https://github.com/nerdtransmitter/rent-the-magic",
   role: "fullstack developer",
   skills: ['Ruby on Rails', 'JavaScript', 'HTML', 'CSS', 'PostgreSQL', 'ActiveStorage', 'ActiveRecord', 'Mapbox', 'Cloudinary', 'UX/UI', 'Heroku'],
-  category: 'website'
+  category: 'website',
+  format: 'desktop'
 )
 
 p2.photos.attach(io: File.open(File.join(Rails.root, "/app/assets/images/RTM1.png")), filename: "marcher_prendre_lair.png", content_type: "image/png")
