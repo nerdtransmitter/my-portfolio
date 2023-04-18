@@ -1,9 +1,16 @@
+<div class="carousel carousel-center rounded-box">
+  <% @project.photos.each do |photo| %>
+    <div class="carousel-item">
+      <%= cl_link_to photo.key, alt: 'project image'%>
+    </div>
+  <% end %>
+</div>
 <div class="container">
   <h1><%= @project.title %></h1>
-  <div class="mockup-phone">
+  <%# <div class="mockup-phone">
     <div class="camera"></div>
     <div class="display">
-      <div class="artboard artboard-demo phone-1"><%= cl_image_tag @project.photos.first.key %></div>
-    </div>
-  </div>
+      <div class="artboard artboard-demo phone-1"><%= image_tag "commencer.PNG" %></div>
+    <%# </div>
+  </div> %> 
 </div>
